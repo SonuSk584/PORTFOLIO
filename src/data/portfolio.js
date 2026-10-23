@@ -2,28 +2,28 @@
 export const data = {
   name: 'Sonu Kumar Thakur',
   role: 'Full-stack developer',
-  tagline: 'I build SaaS products with Node, React and Spring Boot, and add ML and LLM features where they help.',
   status: 'Immediate joiner, open to work',
   photo: '/images/avatar.png',
   email: 'sonukumart74@gmail.com',
   github: 'https://github.com/SonuSk584',
-  linkedin: 'https://www.linkedin.com/in/sonu-thakur-87b5353a0', // TODO: confirm your LinkedIn URL
-  resume: 'https://drive.google.com/file/d/192Eq-kbQ6xZStK9jiJoSadXeDlp-VKnd/view?usp=sharing',
+  linkedin: 'https://www.linkedin.com/in/sonu-thakur-87b5353a0', 
+  resume: 'https://drive.google.com/file/d/1r4i0TvoYWg71ODjqTnU85aF4xVvHwK6-/view?usp=sharing',
   web3formsKey: '', // or set VITE_WEB3FORMS_KEY in .env (free key at web3forms.com)
   about: 'CS engineering graduate from NMIT Bengaluru. I like taking a product from database to deployment: auth, payments, real-time features and CI/CD, then adding machine learning where the data supports it.',
   stats: [
-    { v: '8.7', l: 'CGPA, B.E. Computer Science' }, // TODO: confirm 8.7 or 8.9
+    { v: '8.7', l: 'CGPA, B.E. Computer Science' }, 
     { v: '0.844', l: 'ROC-AUC on churn model' },
     { v: '3', l: 'Projects shipped' },
     { v: '2', l: 'Internships' },
   ],
   skills: {
+    Languages: ['Java','Python', 'C', 'SQL'],
     Backend: ['Node.js', 'Express.js', 'Spring Boot', 'REST APIs', 'WebSocket'],
     Frontend: ['React.js', 'Tailwind CSS', 'HTML', 'JavaScript', 'TypeScript'],
-    'Data and ML': ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'NLP', 'Transformers'],
+    'Data and ML': ['Pytorch', 'Scikit-learn', 'Pandas', 'NumPy', 'NLP', 'Transformers'],
     Databases: ['MySQL', 'MongoDB'],
-    'Tools and cloud': ['Git', 'Docker', 'AWS', 'GitHub Actions', 'Render'],
-    Languages: ['Java', 'C', 'SQL'],
+    'Tools and cloud': ['Git', 'Docker', 'AWS', 'GitHub Actions', 'Render']
+   
   },
   projects: [
     { kind: 'chat', title: 'Polyglot Chat', blurb: 'Real-time multi-user chat with live message translation. Retry and fallback logic keeps it working when the translation API fails; deployed with Docker and GitHub Actions CI/CD.', tags: ['Spring Boot', 'WebSocket', 'MongoDB', 'React', 'Docker'], image: '/images/polyglot.png', github: 'https://github.com/SonuSk584/POLYGLOT', live: 'https://polyglot-six-amber.vercel.app/chat' },
