@@ -1,0 +1,37 @@
+/* Theme it from a parent: --nh-accent, --nh-text, --nh-bg, --nh-edge, --nh-node, --nh-dim, --nh-font */
+.nh { width: 100%; max-width: 720px; }
+.nh svg { display: block; width: 100%; height: auto; overflow: visible; }
+.nh text { font: 400 13px var(--nh-font, "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace); fill: var(--nh-text, #e8ece9); }
+
+.nh-dim { opacity: var(--nh-dim, 0.5); }
+.nh-layer { transition: transform 0.5s ease-out; }
+
+.nh-edge { stroke: var(--nh-edge, #2b322d); stroke-width: 1; fill: none; }
+.nh-flow { stroke: var(--nh-accent, #b8ff3c); stroke-width: 1; stroke-dasharray: 4 5; opacity: 0.55; fill: none; animation: nh-dash 2.8s linear infinite; }
+.nh-node { fill: var(--nh-bg, #0a0c0b); stroke-width: 2; }
+.nh-in { stroke: var(--nh-accent, #b8ff3c); }
+.nh-hid { stroke: var(--nh-node, #59625b); }
+.nh-dot { fill: var(--nh-accent, #b8ff3c); }
+
+.nh-lbl { text-anchor: end; }
+.nh-lbl.nh-hot { fill: var(--nh-accent, #b8ff3c); font-weight: 700; }
+.nh-hit { fill: transparent; cursor: pointer; }
+
+.nh-orb { transform-box: fill-box; transform-origin: center; animation: nh-spin 22s linear infinite; }
+.nh-orb2 { animation-duration: 34s; animation-direction: reverse; }
+.nh-orbit { fill: none; stroke: var(--nh-accent, #b8ff3c); stroke-opacity: 0.2; stroke-dasharray: 2 7; }
+
+.nh-halo { fill: var(--nh-accent, #b8ff3c); opacity: 0.22; transform-box: fill-box; transform-origin: center; animation: nh-breathe 4s ease-in-out infinite; }
+.nh-ring { fill: none; stroke: var(--nh-accent, #b8ff3c); stroke-width: 2; opacity: 0; transform-box: fill-box; transform-origin: center; }
+.nh-ring.nh-go { animation: nh-ring 1.3s ease-out; }
+.nh-core { fill: var(--nh-accent, #b8ff3c); }
+.nh .nh-initials { font: 800 44px system-ui, sans-serif; letter-spacing: -2px; text-anchor: middle; fill: var(--nh-bg, #0a0c0b); }
+
+@keyframes nh-dash { to { stroke-dashoffset: -18; } }
+@keyframes nh-spin { to { transform: rotate(360deg); } }
+@keyframes nh-breathe { 50% { transform: scale(1.07); opacity: 0.3; } }
+@keyframes nh-ring { 0% { opacity: 0.8; transform: scale(0.6); } 100% { opacity: 0; transform: scale(2.3); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .nh-flow, .nh-orb, .nh-halo { animation: none; }
+}
