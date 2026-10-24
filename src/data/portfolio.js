@@ -8,6 +8,7 @@ export const data = {
   github: 'https://github.com/SonuSk584',
   linkedin: 'https://www.linkedin.com/in/sonu-thakur-87b5353a0', 
   resume: 'https://drive.google.com/file/d/1r4i0TvoYWg71ODjqTnU85aF4xVvHwK6-/view?usp=sharing',
+  resumeFile: '/Sonu_Kumar_Thakur_Resume.pdf',
   web3formsKey: '', // or set VITE_WEB3FORMS_KEY in .env (free key at web3forms.com)
   about: 'CS engineering graduate from NMIT Bengaluru. I like taking a product from database to deployment: auth, payments, real-time features and CI/CD, then adding machine learning where the data supports it.',
   stats: [
