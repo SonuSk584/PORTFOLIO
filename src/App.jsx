@@ -10,8 +10,10 @@ import Experience from './components/Experience'
 import Contact from './components/Contact'
 import CommandPalette from './components/CommandPalette'
 import { data } from './data/portfolio'
+import { useScrollRestore } from './hooks/useScrollRestore'
 
 export default function App() {
+  useScrollRestore()
   const [open, setOpen] = useState(false)
   const [proj, setProj] = useState(null)
   useEffect(() => {
