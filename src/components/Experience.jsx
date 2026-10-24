@@ -28,7 +28,8 @@ export default function Experience() {
       <Log items={data.experience} />
       <h3 className="mb-8 mt-6 font-mono text-2xl font-semibold"><span className="text-ac">~/</span>education</h3>
       <Log items={data.education} />
-      <div className="mt-2 flex flex-wrap gap-2.5 font-mono text-sm">
+      <h3 className="mb-6 mt-6 font-mono text-2xl font-semibold"><span className="text-ac">~/</span>certifications</h3>
+      <div className="ml-1.5 flex flex-wrap gap-2.5 font-mono text-sm">
         {data.certifications.map((c) => <span key={c} className="rounded border border-line px-3 py-1.5 text-mu"><span className="mr-2 text-ac">✓</span>{c}</span>)}
       </div>
     </Section>

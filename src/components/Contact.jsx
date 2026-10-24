@@ -22,10 +22,11 @@ export default function Contact() {
     setBusy(false)
   }
   return (
-    <Section id="contact" title="Contact">
+    
+    <Section id="contact">
       <div className="grid gap-12 md:grid-cols-2">
         <div>
-          <p className="mb-6 text-mu">Hiring, or have a project in mind? Send a note and I will reply by email.</p>
+          <p className="mb-6 text-mu">Hiring, or have a project in mind? Send a note.</p>
           <div className="flex flex-col items-start gap-3">
             <a className={link} href={data.github} target="_blank" rel="noopener noreferrer"><Github size={18} /> GitHub</a>
             <a className={link} href={data.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin size={18} /> LinkedIn</a>

@@ -36,7 +36,7 @@ export default function App() {
         <Experience />
         <Contact />
       </main>
-      <footer className="border-t border-line py-8 font-mono text-sm text-mu"><div className="mx-auto max-w-[1120px] px-7">© {new Date().getFullYear()} {data.name}. Built with React, Vite, Tailwind and Framer Motion. Press Ctrl K to ask.</div></footer>
+      <footer className="border-t border-line py-8 font-mono text-sm text-mu text-center"><div className="mx-auto max-w-[1120px] px-7 justify-center">© {new Date().getFullYear()} {data.name}.Press Ctrl K to ask.</div></footer>
       <CommandPalette open={open} setOpen={setOpen} pickProject={setProj} />
     </MotionConfig>
   )

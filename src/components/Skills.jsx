@@ -5,7 +5,7 @@ export default function Skills() {
   const rows = Object.entries(data.skills)
   const num = (n) => <span className="mr-5 inline-block w-5 select-none text-right text-[#46544B]">{n}</span>
   return (
-    <Section id="skills" title="skills">
+    <Section id="skills">
       <div className="overflow-hidden rounded-xl border border-line bg-panel">
         <div className="border-b border-line px-5 py-3 font-mono text-sm text-mu">skills.json</div>
         <div className="overflow-x-auto p-5 font-mono text-[15px] leading-9">
